@@ -1,12 +1,399 @@
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivana Ivanić</title>
-</head>
-<body>
-    <h1><?= "Hello LV1 task" ?></h1>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=drevice-width, initial-scale=1.0">
+        <meta name="description" content="Check out my personal portfolio, learn about me, learn what people are saying about me and more!">
+        <meta name="robots" content="index, archive">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div>
+                <img src="./images/logo.svg" alt="Logo" loading="lazy">
+            </div>
+            <div class="nav-bar-anchors">
+                <a href="#home">
+                    <p class="body2 nav-bar-anchors-item" role="button">Home</p>
+                </a>
+                <a href="#portfolio">
+                    <p class="body2 nav-bar-anchors-item" role="button">Portfolio</p>
+                </a>
+                <a href="#about-me">
+                    <p class="body2 nav-bar-anchors-item" role="button">About me</p>
+                </a>
+                <a href="#testimonials">
+                    <p class="body2 nav-bar-anchors-item" role="button">Testimonials</p>
+                </a>
+            </div>
+            <button class="nav-bar-contact-me body2" role="button">Contact me</button>
+        </nav>
+        <div class="home" id="home">
+            <div class="home-text">
+                <h3>Hey, I am John</h3>
+                <h1 class="home-large-text">
+                    <span style="color: #282938">I create</span>
+                    <span style="color: #5E3BEE">product design</span>
+                    <span style="color: #282938">and brand experience</span>
+                </h1>
+                <h3 class="home-subtext">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                eros elementum tristique.
+                </h3>
+                <button class="filled-button">
+                    Get in touch
+                </button>
+            </div>
+            <img
+                src="./images/home-photo.png"
+                alt="My image"
+                class="home-photo"
+                loading="lazy"
+            >
+        </div>
+        <div class="expertise">
+            <h3 aria-label="Read about my skills and accomplishments">My Skills</h3>
+            <h1>My Expertise</h1>
+            <div class="expertise-cards">
+                <div class="expertise-card">
+                    <img
+                        src="./images/strategy_direction.svg"
+                        alt="Strategy and Direction"
+                        class="expertise-card-image"
+                        loading="lazy"
+                    >
+                    <h3 class="expertise-h2">Strategy & Direction</h3>
+                    <p class="body2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <img
+                        src="./images/branding_logo.svg"
+                        alt="Branding and Logo"
+                        class="expertise-card-image"
+                        loading="lazy"
+                    >
+                    <h3 class="expertise-h2">Branding & Logo</h3>
+                    <p class="body2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <img
+                        src="./images/ux_ui_design.svg"
+                        alt="UI & UX Design"
+                        class="expertise-card-image"
+                        loading="lazy"
+                    >
+                    <h3 class="expertise-h2">UI & UX Design</h3>
+                    <p class="body2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    </p>
+                </div>
+                <div class="expertise-card">
+                    <img
+                        src="./images/web_development.svg"
+                        alt="Webflow Development"
+                        class="expertise-card-image"
+                        loading="lazy"
+                    >
+                    <h3 class="expertise-h2">Webflow Development</h3>
+                    <p class="body2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-me" id="about-me" aria-label="Get to know me">
+            <img
+                src="images/about_me.png"
+                alt="About me photo"
+                class="about-me-photo"
+                loading="lazy"
+            >
+            <div class="about-me-text">
+                <p class="body2 about-me-subtitle">About</p>
+                <h2 class="about-me-title">About me</h2>
+                <p class="body1 about-me-subtext">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet
+                augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac
+                adipiscing velit non nulla in amet pellentesque.
+
+                Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet
+                pellentesque sit pulvinar lorem mi a, euismod risus r.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <div>
+                <p class="portfolio-recent-projects body1">Recent projects</p>
+                <h2 class="portfolio-title">My Portfolio</h2>
+            </div>
+            <button class="portfolio-button">
+                <span>
+                    <img src="images/visit_dribble.png" alt="Visit My Dribble" loading="lazy">
+                </span>
+                <span>
+                    <p class=" portfolio-button-text body2">
+                        Visit My Dribble
+                    </p>
+                </span>
+            </button>
+        </div>
+        <div class="portfolio-cards" aria-label="Learn more about my projects">
+            <div class="portfolio-card">
+                <img
+                    src="images/ahuze.png"
+                    alt="Image"
+                    class="portfolio-image"
+                    loading="lazy"
+                >
+                <div class="portfolio-card-text">
+                    <h3>Ahuse</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    <button class="portfolio-card-visit-dribble">
+                        <span class="body3">View in Dribble</span>
+                        <span>
+                            <img
+                                src="images/arrow.svg"
+                                alt="Arrow"
+                                class="portfolio-button-arrow"
+                                loading="lazy"
+                            >
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img
+                    src="images/app_dashboard.png"
+                    alt="Image"
+                    class="portfolio-image"
+                    loading="lazy"
+                >
+                <div class="portfolio-card-text">
+                    <h3>App Dashboard</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    <button class="portfolio-card-visit-dribble">
+                        <span class="body3">View in Dribble</span>
+                        <span>
+                            <img
+                                src="images/arrow.svg"
+                                alt="Arrow"
+                                class="portfolio-button-arrow"
+                                loading="lazy"
+                            >
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img
+                    src="images/easy-rent.png"
+                    alt="Image"
+                    class="portfolio-image"
+                    loading="lazy"
+                >
+                <div class="portfolio-card-text">
+                    <h3>Easy Rent</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    <button class="portfolio-card-visit-dribble">
+                        <span class="body3">View in Dribble</span>
+                        <span>
+                            <img
+                                src="images/arrow.svg"
+                                alt="Arrow"
+                                class="portfolio-button-arrow"
+                                loading="lazy"
+                            >
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials" id="testimonials" aria-label="Check out what people are saying about me">
+            <p class="testimonials-subtitle body2">Clients Feedback</p>
+            <h2 class="testimonials-title">Customer Testimonials</h2>
+            <div class="testimonials-cards">
+                <div class="testimonials-card">
+                    <div class="testimonials-card-star">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                    </div>
+                    <p class="body2">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="testimonials-card-creator">
+                        <img src="images/dianne_russel.png" alt="avatar" class="testimonials-card-creator-avatar">
+                        <div class="testimonials-card-creator-name-occupation">
+                            <p class="testimonials-card-creator-name body2">Dianne Russel</p>
+                            <p class="testimonials-card-creator-occupation body2">Starbucks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-card">
+                    <div class="testimonials-card-star">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                    </div>
+                    <p class="body2">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="testimonials-card-creator">
+                        <img src="images/kristin_watson.png" alt="avatar" class="testimonials-card-creator-avatar">
+                        <div class="testimonials-card-creator-name-occupation">
+                            <p class="testimonials-card-creator-name body2">Kristin Watson</p>
+                            <p class="testimonials-card-creator-occupation body2">Louis Vuitton</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-card">
+                    <div class="testimonials-card-star">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                        <img src="images/star.svg" alt="Star" loading="lazy">
+                    </div>
+                    <p class="body2">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="testimonials-card-creator">
+                        <img
+                            src="images/kathryn_murphy.png"
+                            alt="avatar"
+                            class="testimonials-card-creator-avatar"
+                            loading="lazy"
+                        >
+                        <div class="testimonials-card-creator-name-occupation">
+                            <p class="testimonials-card-creator-name body2">Kathryn Murphy</p>
+                            <p class="testimonials-card-creator-occupation body2">McDonald's</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-me" id="contact-me" aria-label="Get in touch with me">
+            <p class="contact-me-get-in-touch">Get In Touch</p>
+            <h2 class="contact-me-title">Contact me</h2>
+            <p class="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="contact-me-mulitple-inputs-same-line">
+                <label>
+                    First Name
+                    <input type="text" class="multiple-inputs-same-line ">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" class="multiple-inputs-same-line ">
+                </label>
+            </div>
+            <div class="contact-me-mulitple-inputs-same-line">
+                <label>
+                    Email
+                    <input type="email" class="multiple-inputs-same-line ">
+                </label>
+                <label>
+                    Phone number
+                    <input type="tel" class="multiple-inputs-same-line ">
+                </label>
+            </div>
+            <label>
+                Choose a topic
+                <select class="max-width-input">
+                    <option>Select one...</option>
+                </select>
+            </label>
+            <label class="contact-me-message">
+                Message
+                <textarea
+                    class="max-width-input"
+                    placeholder="Type your message..."
+                    name="Message"
+                    rows="100"
+                ></textarea>
+            </label>
+            <label class="contact-me-terms">
+                <input type="checkbox">
+                I accept the terms
+            </label>
+            <button class="filled-button">Submit</button>
+        </div>
+        <footer>
+            <div class="footer-anchors-socials-container">
+                <div>
+                    <img src="./images/logo.svg" alt="Logo" loading="lazy">
+                </div>
+                <div class="footer-anchors">
+                    <a href="#home">
+                        <p class="body2 footer-bar-anchors-item" role="button">Home</p>
+                    </a>
+                    <a href="#portfolio">
+                        <p class="body2 footer-bar-anchors-item" role="button">Portfolio</p>
+                    </a>
+                    <a href="#about-me">
+                        <p class="body2 footer-bar-anchors-item" role="button">About me</p>
+                    </a>
+                    <a href="#contact-me">
+                        <p class="body2 footer-bar-anchors-item" role="button">Contact</p>
+                    </a>
+                    <a href="#testimonials">
+                        <p class="body2 footer-bar-anchors-item" role="button">Testimonials</p>
+                    </a>
+                </div>
+                <div class="footer-socials">
+                    <img
+                        src="images/facebook.svg"
+                        alt="Facebook logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/instagram.svg"
+                        alt="Instagram logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/twitter.svg"
+                        alt="Twitter logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/linkedin.svg"
+                        alt="LinkedIn logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-credits-terms">
+                <p>Made with 💖 by Airdokan</p>
+                <div class="footer-terms">
+                    <p class="body3" role="button">Privacy Policy</p>
+                    <p class="body3" role="button">Terms of Service</p>
+                    <p class="body3" role="button">Cookies Settings</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
