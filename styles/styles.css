@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Roboto';
     font-style: normal;
@@ -118,7 +122,7 @@ nav {
 .home-photo {
     padding-top: 133.33;
     padding-bottom: 133.33;
-    padding-right: 126.67;
+    margin-right: 126.67;
     max-width: 40%;
     height: auto;
     object-fit: contain;
@@ -318,7 +322,7 @@ nav {
 }
 
 .testimonials {
-    margin: 112px 64px;
+    padding: 112px 64px;
     background-color: #F5FCFF;
     width: 100%;
 }
@@ -345,8 +349,8 @@ nav {
     border: 1.33333px solid #006B6A;
     border-radius: 8px;
     padding: 42.6667px;
-    width: 380px;
-    min-width: 380px;
+    width: 320px;
+    min-width: 320px;
 }
 
 .testimonials-card-stars {
@@ -543,4 +547,69 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar-anchors {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .max-width-input {
+        width: 424px;
+    }
+
+    .multiple-inputs-same-line {
+        width: 196px;
+    }
+
+    .footer-anchors-socials-container {
+        flex-direction: column;
+    }
+
+    .footer-anchors {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20pxd;
+    }
+
+    .contact-me-terms {
+        margin-left: 80px;
+    }
+
+    .home-large-text {
+        font-size: 50px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio-cards {
+        margin-left: 44px;
+        margin-right: 44px;
+    }
+}
+
+@media screen and (max-width: 800) {
+    .max-width-input {
+        width: 424px;
+    }
+
+    .multiple-inputs-same-line {
+        width: 100px;
+    }
+
+
+    .contact-me-terms {
+        margin-left: 40px;
+    }
+
+    home-large-text {
+        font-size: 40px;
+    }
 }

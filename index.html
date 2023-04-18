@@ -2,7 +2,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=drevice-width, initial-scale=1.0">
+        <meta name="description" content="Check out my personal portfolio, learn about me, learn what people are saying about me and more!">
+        <meta name="robots" content="index, archive">
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +18,19 @@
             </div>
             <div class="nav-bar-anchors">
                 <a href="#home">
-                    <p class="body2 nav-bar-anchors-item">Home</p>
+                    <p class="body2 nav-bar-anchors-item" role="button">Home</p>
                 </a>
                 <a href="#portfolio">
-                    <p class="body2 nav-bar-anchors-item">Portfolio</p>
+                    <p class="body2 nav-bar-anchors-item" role="button">Portfolio</p>
                 </a>
                 <a href="#about-me">
-                    <p class="body2 nav-bar-anchors-item">About me</p>
+                    <p class="body2 nav-bar-anchors-item" role="button">About me</p>
                 </a>
                 <a href="#testimonials">
-                    <p class="body2 nav-bar-anchors-item">Testimonials</p>
+                    <p class="body2 nav-bar-anchors-item" role="button">Testimonials</p>
                 </a>
             </div>
-            <button class="nav-bar-contact-me body2">Contact me</button>
+            <button class="nav-bar-contact-me body2" role="button">Contact me</button>
         </nav>
         <div class="home" id="home">
             <div class="home-text">
@@ -54,7 +56,7 @@
             >
         </div>
         <div class="expertise">
-            <h3>My Skills</h3>
+            <h3 aria-label="Read about my skills and accomplishments">My Skills</h3>
             <h1>My Expertise</h1>
             <div class="expertise-cards">
                 <div class="expertise-card">
@@ -111,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-me" id="about-me">
+        <div class="about-me" id="about-me" aria-label="Get to know me">
             <img
                 src="images/about_me.png"
                 alt="About me photo"
@@ -147,7 +149,7 @@
                 </span>
             </button>
         </div>
-        <div class="portfolio-cards">
+        <div class="portfolio-cards" aria-label="Learn more about my projects">
             <div class="portfolio-card">
                 <img
                     src="images/ahuze.png"
@@ -218,7 +220,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonials" id="testimonials">
+        <div class="testimonials" id="testimonials" aria-label="Check out what people are saying about me">
             <p class="testimonials-subtitle body2">Clients Feedback</p>
             <h2 class="testimonials-title">Customer Testimonials</h2>
             <div class="testimonials-cards">
@@ -289,7 +291,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-me" id="contact-me">
+        <div class="contact-me" id="contact-me" aria-label="Get in touch with me">
             <p class="contact-me-get-in-touch">Get In Touch</p>
             <h2 class="contact-me-title">Contact me</h2>
             <p class="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -341,35 +343,55 @@
                 </div>
                 <div class="footer-anchors">
                     <a href="#home">
-                        <p class="body2 footer-bar-anchors-item">Home</p>
+                        <p class="body2 footer-bar-anchors-item" role="button">Home</p>
                     </a>
                     <a href="#portfolio">
-                        <p class="body2 footer-bar-anchors-item">Portfolio</p>
+                        <p class="body2 footer-bar-anchors-item" role="button">Portfolio</p>
                     </a>
                     <a href="#about-me">
-                        <p class="body2 footer-bar-anchors-item">About me</p>
+                        <p class="body2 footer-bar-anchors-item" role="button">About me</p>
                     </a>
                     <a href="#contact-me">
-                        <p class="body2 footer-bar-anchors-item">Contact</p>
+                        <p class="body2 footer-bar-anchors-item" role="button">Contact</p>
                     </a>
                     <a href="#testimonials">
-                        <p class="body2 footer-bar-anchors-item">Testimonials</p>
+                        <p class="body2 footer-bar-anchors-item" role="button">Testimonials</p>
                     </a>
                 </div>
                 <div class="footer-socials">
-                    <img src="images/facebook.svg" alt="Facebook logo" loading="lazy">
-                    <img src="images/instagram.svg" alt="Instagram logo" loading="lazy">
-                    <img src="images/twitter.svg" alt="Twitter logo" loading="lazy">
-                    <img src="images/linkedin.svg" alt="LinkedIn logo" loading="lazy">
+                    <img
+                        src="images/facebook.svg"
+                        alt="Facebook logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/instagram.svg"
+                        alt="Instagram logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/twitter.svg"
+                        alt="Twitter logo"
+                        loading="lazy"
+                        role="button"
+                    >
+                    <img
+                        src="images/linkedin.svg"
+                        alt="LinkedIn logo"
+                        loading="lazy"
+                        role="button"
+                    >
                 </div>
             </div>
             <hr class="footer-hr">
             <div class="footer-credits-terms">
                 <p>Made with 💖 by Airdokan</p>
                 <div class="footer-terms">
-                    <p class="body3">Privacy Policy</p>
-                    <p class="body3">Terms of Service</p>
-                    <p class="body3">Cookies Settings</p>
+                    <p class="body3" role="button">Privacy Policy</p>
+                    <p class="body3" role="button">Terms of Service</p>
+                    <p class="body3" role="button">Cookies Settings</p>
                 </div>
             </div>
         </footer>
