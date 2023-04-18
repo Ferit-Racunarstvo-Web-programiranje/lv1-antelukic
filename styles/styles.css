@@ -81,10 +81,10 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25.33px;
-    padding-bottom: 25.33px;
-    padding-left: 85.33px;
-    padding-right: 85.33px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 86px;
+    padding-right: 86px;
 }
 
 .nav-bar-anchors {
@@ -92,7 +92,7 @@ nav {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 42.67px;
+    gap: 42px;
 }
 
 .nav-bar-anchors-item {
@@ -107,8 +107,8 @@ nav {
     border: 1.33px solid #5E3BEE;
     background-color: white;
     color: #5E3BEE;
-    padding: 18.6667px 42.6667px;
-    border-radius: 5.33333px
+    padding: 18px 42px;
+    border-radius: 6px
 }
 
 .home {
@@ -120,9 +120,9 @@ nav {
 }
 
 .home-photo {
-    padding-top: 133.33;
-    padding-bottom: 133.33;
-    margin-right: 126.67;
+    padding-top: 132px;
+    padding-bottom: 132px;
+    margin-right: 126px;
     max-width: 40%;
     height: auto;
     object-fit: contain;
@@ -132,9 +132,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 85.33;
-    padding-top: 133.33;
-    padding-bottom: 133.33;
+    padding-left: 86px;
+    padding-top: 132px;
+    padding-bottom: 132px;
 }
 
 .home-large-text {
@@ -212,8 +212,8 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 133.333px 85.3333px;
-    gap: 114.67px;
+    padding: 132px 86px;
+    gap: 112px;
 }
 
 .about-me-photo {
@@ -384,7 +384,7 @@ nav {
 }
 
 .contact-me {
-    padding: 149.333px 85.333px;
+    padding: 148px 86px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -482,7 +482,6 @@ textarea {
 }
 
 .contact-me-terms {
-    width: 100%;
     align-self: flex-start;
     display: inline-flex;
     align-items: center;
@@ -574,7 +573,7 @@ footer {
     .footer-anchors {
         flex-direction: column;
         gap: 12px;
-        margin-bottom: 20pxd;
+        margin-bottom: 20px;
     }
 
     .contact-me-terms {
@@ -611,5 +610,151 @@ footer {
 
     home-large-text {
         font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-photo {
+        padding-top: 33px;
+        padding-bottom: 33px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .home-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 8px;
+        padding-right: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .home-large-text {
+        font-size: 40px;
+        padding: 8px 0px;
+    }
+
+
+    .expertise {
+        margin-top: 80px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .expertise-cards {
+        margin-top: 86px;
+        gap: 42px;
+        padding: 0px 16px;
+    }
+
+    .expertise-card {
+        width: 160px;
+    }
+
+
+    .about-me {
+        flex-direction: column;
+        padding: 86px 16px;
+        gap: 80px;
+    }
+
+    .about-me-photo {
+        max-width: 70%;
+    }
+
+
+    .testimonials {
+        padding: 80px 0px;
+    }
+
+    .testimonials-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 42.67px;
+        overflow: auto;
+        padding: 16px 0px;
+    }
+
+    .contact-me-mulitple-inputs-same-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .multiple-inputs-same-line {
+        width: 250px;
+    }
+
+    .max-width-input {
+        width: 250px;
+    }
+
+    .contact-me-terms {
+        align-self: flex-start;
+        display: inline-flex;
+        justify-content: start;
+        align-items: center;
+        gap: 12px;
+        margin-left: 13px;
+    }
+
+    .portfolio {
+        padding-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .portfolio-cards {
+        margin: 0px;
+        width: 100%;
+    }
+
+    footer {
+        padding: 106px 0px;
+        gap: 86px;
+        background: #F5FCFF;
+    }
+
+    .footer-credits-terms {
+        flex-direction: column;
+    }
+
+    .footer-terms {
+        flex-direction: column;
+    }
+
+    .footer-hr {
+        margin: 16px 16px;
+    }
+
+    .contact-me {
+        margin: 80px 0px;
+        padding: 0px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonials-card {
+        border: 1.33333px solid #006B6A;
+        border-radius: 8px;
+        padding: 42.6667px;
+        width: 160px;
+        min-width: 160px;
     }
 }
