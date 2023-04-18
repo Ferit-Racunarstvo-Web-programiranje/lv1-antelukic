@@ -1,6 +1,6 @@
 # LV 1 zadatak - Osobna stranica
 
-### LINK: 
+### LINK: https://prismatic-rugelach-137f33.netlify.app/?fbclid=IwAR0uEyj_n_G7cVPg6zhs5nMzZu7Ql5UXLl2WX3jKNGQBqR5-cS-xLafMMKc
 
 <hr />
 
